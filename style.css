@@ -2,122 +2,93 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
     background-color: #0d1117;
     color: #c9d1d9;
-    line-height: 1.6;
-}
-
-/* Navbar */
-.navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 20px 50px;
-    background-color: #161b22;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #58a6ff;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #c9d1d9;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #58a6ff;
-}
-
-/* Sections */
-section {
-    padding: 100px 20px 80px;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.calculator-container {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+    width: 320px;
     text-align: center;
-    border-bottom: 1px solid #30363d;
 }
 
-/* Hero Section */
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero h1 span {
+.calculator-container h2 {
     color: #58a6ff;
-}
-
-.hero p {
-    font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #8b949e;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #238636;
-    color: white;
-    text-decoration: none;
+.calculator-screen {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: #0d1117;
     border-radius: 6px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: #2ea043;
-}
-
-/* About & Contact */
-.about h2, .skills h2, .contact h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
     color: #58a6ff;
+    text-align: right;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border: 1px solid #30363d;
 }
 
-.about p, .contact p {
-    max-width: 600px;
-    font-size: 1.1rem;
-    color: #8b949e;
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 
-/* Skills */
-.skill-box {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    max-width: 600px;
-    margin-top: 20px;
-}
-
-.skill-box span {
+button {
+    height: 50px;
     background-color: #21262d;
     border: 1px solid #30363d;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
     color: #c9d1d9;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #30363d;
+}
+
+.operator {
+    background-color: #1f6feb;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #388bfd;
+}
+
+.all-clear {
+    background-color: #da3633;
+    color: white;
+}
+
+.all-clear:hover {
+    background-color: #f85149;
+}
+
+.equal-sign {
+    background-color: #238636;
+    color: white;
+    grid-column: span 2;
+}
+
+.equal-sign:hover {
+    background-color: #2ea043;
 }

@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Calculator - Task 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Portfolio.</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="calculator-container">
+        <h2>Calculator</h2>
+        <input type="text" class="calculator-screen" value="" disabled />
+        
+        <div class="calculator-keys">
+            <button type="button" class="operator" value="+">+</button>
+            <button type="button" class="operator" value="-">-</button>
+            <button type="button" class="operator" value="*">&times;</button>
+            <button type="button" class="operator" value="/">&divide;</button>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span>Saeed Ahmed</span></h1>
-            <p>Cybersecurity Student & Front-End Developer</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+
+            <button type="button" value="0">0</button>
+            <button type="button" class="decimal" value=".">.</button>
+            <button type="button" class="all-clear" value="all-clear">AC</button>
+
+            <button type="button" class="equal-sign" value="=">=</button>
         </div>
-    </section>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate first-year Cybersecurity student at Iqra University. I have a strong interest in web development, creating clean front-end interfaces, and exploring tech solutions.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-box">
-            <span>HTML & CSS</span>
-            <span>JavaScript</span>
-            <span>Front-End Development</span>
-            <span>Social Media Management</span>
-            <span>Photography</span>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Let's connect and build something amazing together.</p>
-        <a href="mailto:saeed@example.com" class="btn">Email Me</a>
-    </section>
+    <script src="script.js"></script>
 </body>
 </html>
