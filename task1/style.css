@@ -1,50 +1,152 @@
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
+body {
+    background: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
+.container {
+    width: 90%;
+    max-width: 1100px;
     margin: auto;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+header {
+    background: #1e293b;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav ul li a {
-    color: #fff;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: #cbd5e1;
     text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
 }
 
 .hero {
-    padding: 80px 20px;
+    height: 80vh;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    color: #333;
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ffffff;
 }
 
-.hero button {
-    padding: 10px 20px;
-    background: #007bff;
+.hero-content p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 8px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.primary:hover {
+    background: #0284c7;
     color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+}
+
+.secondary {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.secondary:hover {
+    background: #38bdf8;
+    color: #0f172a;
+}
+
+.features {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #090d16;
+    color: #64748b;
 }
